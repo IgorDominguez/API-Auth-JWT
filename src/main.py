@@ -3,7 +3,7 @@ from scalar_fastapi import get_scalar_api_reference
 from api.routes.auth import auth_routes
 from api.routes.user import user_routes
 
-app = FastAPI()
+app = FastAPI(title="Autenticação com JWT")
 
 @app.get("/scalar", include_in_schema=False)
 async def scalar_html():
