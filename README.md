@@ -19,10 +19,24 @@ Este projeto é uma API desenvolvida com FastAPI que implementa um sistema de au
 1. Clone o repositório:
    ```bash
    git clone https://github.com/IgorDominguez/API-Auth-JWT.git
-   cd auth-jwt-fastapi
+   cd API-Auth-JWT/
    ```
 
-2. Instale as dependências:
+2. Crie o VENV:
+   ```bash
+   uv venv .venv
+   ```
+
+3. Ative o VENV:
+   ```bash
+   # Linux/Mac
+   source .venv/bin/activate
+
+   # Windows
+   .\.venv\Scripts\Activate.ps1
+   ```
+
+4. Instale as dependências:
    ```bash
    uv sync
    ```
@@ -40,22 +54,13 @@ ALGORITHM=HS256
 
 ## Execução
 
-Entre na pasta `src` e execute um dos comandos abaixo:
+Entre na pasta `src` e execute o comando abaixo:
 
 ```bash
 cd src # Entrar na pasta
 ```
 ```bash
-uvicorn main:app --reload
-```
-
-Ou:
-
-```bash
-cd src
-```
-```bash
-uv run main.py
+uvicorn main:app --reload # Executar o servidor
 ```
 
 A API estará disponível em `http://localhost:8000`.
