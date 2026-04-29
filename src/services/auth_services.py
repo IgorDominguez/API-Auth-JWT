@@ -2,8 +2,7 @@ import jwt
 from schemas.auth_schemas import AccessSchema, RefreshSchema
 from schemas.user_schemas import UserSchema
 from datetime import datetime, timedelta
-from api.config import config
-import redis
+from api.config import Config
 from fastapi import HTTPException
 
 class AuthServices:
