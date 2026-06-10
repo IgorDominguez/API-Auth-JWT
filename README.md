@@ -66,8 +66,9 @@ uvicorn main:app --reload # Executar o servidor
 A API estará disponível em `http://localhost:8000`.
 
 ## Documentação
+*abra somente quando estiver com o projeto rodando localmente*
 
-- **Swagger UI**: [http://localhost:8000/docs#/](http://localhost:8000/docs#/)
+- **Swagger UI**: [http://localhost:8000/docs/](http://localhost:8000/docs#/)
 - **Scalar**: [http://localhost:8000/scalar](http://localhost:8000/scalar)
 
 ## Rotas da API
